@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 标题 -->
+	<h1>zhang</h1>
+	<h2>xin</h2>
+	<h3>hua</h3>
+	<!-- 段落 -->
+	<p><a href="#zha">查琳大傻逼</a></p>
+	<p>查琳偷偷摸小鸡鸡</p>
+	<!-- 列表 -->
+	<!-- 有序列表 -->
+	<ol>
+		<li>查琳</li>
+		<li>zhang</li>
+		<li>xin</li>
+	</ol>
+	<!-- 无序列表 -->
+	<ul>
+		<li>一月份</li>
+		<li>二月份</li>
+		<li>三月份</li>
+		<li>四月份</li>
+	</ul>
+	<!-- 嵌套列表 -->
+	<ol>
+		<li>江苏省
+			<ul>
+				<li>城市一</li>
+				<li>城市2</li>
+				<li>城市3</li>
+				<li>城市4</li>
+			</ul>
+		</li>
+		<li>安徽省
+			<ul>
+				<li>城市一</li>
+				<li>城市2</li>
+				<li>城市3</li>
+				<li>城市4</li>
+			</ul>
+		</li>
+	</ol>
+	<!-- 行内元素 -->
+	<p>
+		北京<i>海滨区</i><b>三环 路</b>西路<u>18</u>号<span style="color: red;">中鼎大厦</span>B座7层
+	</p>
+	<!-- 空格折叠 -->
+	<p>
+		如果说你是海上&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;的烟火<br>
+		我是浪花的&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;泡沫<br> 那么我
+	</p>
+
+	<!-- 图片(行内元素，左右排列) -->
+	<!-- 绝对路径 从盘符写出文件的完整路径 D:\桌面壁纸.jpg 
+	这样的方式有明显的缺点路径很长很烦
+	若项目上线时，用户要求将网页存在别的盘符下，所以路径都错了-->
+
+	<!-- 相对路径
+		只需要写出文件或网页的相对位置、
+		简单
+		上线时，无论将项目放到哪个盘符下，网页和图片的相对位置没有变化 -->
+	<p>
+		<!-- 图片和网页平级 -->
+		<img src="1.jpg" width="500" height="400" />
+	</p>
+
+	<p>
+		<!-- 图片在网页的下级 -->
+		<img src="img/2.jpg" width="600" height="400" />
+		<!-- 图片在网页的上级 -->
+		<img  src="../3.jpg"width="600" height="400"/>
+	</p>
+	<p>
+		<!-- 图片和网页平级 -->
+		<img src="../../resources/5.jpg" width="500" height="400" />
+	</p>
+	<!-- 超链接（行内） -->
+	<p>
+		<!-- 超链接的一般用法 -->
+		<a  href="http://www.baidu.com" target="_blank">百度</a>
+	</p>
+	<!-- 超链接的特殊用法 
+		将超链接链本网页的某个位置
+		这个位置叫做锚点
+		必须提前声明锚点-->
+	<p>
+		<a name="zha">查琳</a>是个大傻逼
+	</p>
+	<!-- 顶部默认就是锚点没有名字 -->
+	<p><a href="#">返回顶部</a></p>
+	
+	<!-- 表格(块) -->
+	<!-- 表格的基本结构 -->
+	<table border="1" cellspacing="0" width="30%">
+		<tr>
+			<td >张新华</td>
+			<td>张嘉文</td>
+		</tr>
+		<tr>
+			<td>黄查琳</td>
+			<td>zzz</td>
+		</tr>
+	</table>
+	<!-- 表格跨行 -->
+	<table border="1" cellspacing="0" width="30%">
+		<tr>
+			<td rowspan="2">张新华</td>
+			<td>张嘉文</td>
+
+		</tr>
+		<tr>
+<!-- 			<td>黄查琳</td> -->
+			<td>zzz</td>
+		</tr>
+	</table>
+	<!-- 表格跨列 -->
+	<table border="1" cellspacing="0" width="30%">
+		<tr>
+			<td colspan="2">张新华</td>
+<!-- 			<td>张嘉文</td> -->
+		</tr>
+		<tr>
+			<td>黄查琳</td>
+			<td>新华啊</td>
+		</tr>
+	</table>
+	<!-- 行分组 -->
+	<table border="1" cellspacing="0" width="30%">
+		<thead>
+			<tr><th>编号</th><th>名称</th><th>金额</th></tr>
+		</thead>
+		<tbody style="color: red;">
+			<tr><td>001</td><td>鼠标</td><td>50</td></tr>
+			<tr><td>002</td><td>键盘</td><td>100</td></tr>
+		</tbody>
+		<tfoot>
+			<tr><td colspan="2">合计</td><td>150</td></tr>
+		</tfoot>
+	</table>
+</body>
+</html>

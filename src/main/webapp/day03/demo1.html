@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*设置背景图*/
+		body{
+			background-image: url(../img/bg.png);
+			background-position: center;
+			background-repeat: repeat-y;
+		}
+		/*可以采用简化的方式一起设置背景色及背景图
+		语法如下：background 背景色 背景图 平铺 位置
+		上诉四个值可以酌情省略*/
+		.enemy{
+			border: 1px solid red;
+			width: 500px;height: 500px;
+			background: url(../img/4.jpg) no-repeat center;	
+			margin: 20px auto;
+		}
+		.hero{
+			border:1px solid red;
+			width: 500px;height: 500px;
+			background:url(../img/a.jpg) no-repeat center;
+			margin: 20px auto;
+		}
+		/*固定背景图*/
+		body{
+			background-attachment: fixed;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="enemy"></div>
+	<div class="hero"></div>
+	<div class="hero"></div>
+</body>
+</html>
