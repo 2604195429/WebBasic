@@ -115,3 +115,32 @@ body{
 	/*将鼠标形状设置为手型*/
 	cursor: pointer;
 }
+/*logo图片和消息框的定位问题*/
+.logo img{
+	float: left;
+}
+.content{
+	/*将其作为子元素的绝对定位目标*/
+	position: relative;
+
+}
+.content .alert{
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	width: 500px;
+	height: 80px;
+	background: #fdecec url(../img/s2.png) no-repeat 10px 35px;
+	border: 1px solid #ccc ;
+}
+.content .alert_exit{
+	float: right;
+	margin: 5px
+}
+.content .alert_exit,.content .alert_ok:hover{
+	cursor: pointer;
+}
+.alert p{
+	margin-left: 38px;
+	line-height: 80px
+}
