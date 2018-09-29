@@ -144,3 +144,33 @@ body{
 	margin-left: 38px;
 	line-height: 80px
 }
+/*设置菜单栏样式*/
+.menu ol{
+	border: 1px solid #00ff00;
+	width: 960px;
+	height: 91px;
+	margin: 0px auto;
+	list-style-type: none;
+}
+.menu li{
+	border: 1px solid #0000ff;
+	width: 68px;
+	height: 77px;
+	margin: 7px 14px;
+	float: left;
+	
+}
+.index{
+	background: url(../img/1.png) no-repeat center;
+}
+.index:hover{
+	background: url(../img/3.png) no-repeat center;
+	cursor: pointer;
+}
+.role{
+	background: url(../img/2.png) no-repeat center;
+}
+/*去掉调试过程中的边框*/
+.menu ol,.menu li,div{
+	border: 0;
+}
