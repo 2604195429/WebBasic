@@ -40,6 +40,15 @@
 		var n = 3;
         console.log(m == n);
         console.log(m === n);
+        //条件表达式
+		//js中可用用任意数据做条件,当使用非布尔值做条件是时,所有的空值等价于false,非空值等价于true
+		//空值:null/0/""/undefined/NaN
+		//这样设计的目的:简化条件表达式
+		var k = 9;
+		if (k){
+		    console.log("ok");
+		}
+		k&&console.log("yes");
 	</script>
 </head>
 <body>
