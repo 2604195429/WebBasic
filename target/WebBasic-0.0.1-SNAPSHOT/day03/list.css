@@ -1,0 +1,176 @@
+/*对网页做些统一的设置*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/*给网页分区设置每个区域的尺寸*/
+div{
+/*	border: 1px solid red;*/
+	margin: 0 auto;
+}
+.logo{
+	width: 960px;height: 85px;
+}
+.menu{
+	height: 91px;
+}
+.core{
+	height: 410px;
+	padding-top: 10px;
+}
+.copy{
+	width: 960px;height: 50px;
+}
+.content{
+	width: 950px;
+	height: 390px;
+	border:5px solid #8ac1db;
+}
+.content div{
+	width: 910px;
+	height: 40px;
+}
+.content .data{
+	height: 310px;
+}
+/*设置背景*/
+body{
+	background-color: #0EA8D8
+}
+.logo{
+	background:url(../img/logo.png) no-repeat center;
+}
+.menu{
+	background: #0488BB;
+}
+.content{
+	background: #e8f3f8;
+}
+/*渐变条做成一个小图的目的，是为了在网络上传输是更快，更节约流量。但他不够大，需要纵向平铺才行*/
+/*没有图片资源
+.core{
+	background: url() repeat-x top;
+}*/
+/*设置文本样式*/
+body{
+	font-family: "微软雅黑","文泉驿正黑","黑体";
+	font-size: 14px;
+}
+.copy p{
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+}
+.logo{
+	text-align: right;
+	line-height: 61px;
+}
+.logo a{
+	text-decoration: none;
+	margin-right:  40px;
+	color: #fff;
+}
+.logo a:hover{
+	font-weight: bold;
+}
+/*设置表格的样式*/
+.data table{
+	border: 1px solid #ccc;
+	/*边框合并必须写在table上*/
+	border-collapse: collapse;
+	width: 100%;
+
+}
+.data td{
+	border: 1px solid #ccc;
+	text-align:center;
+}
+/*单元格中的文字默认垂直居中*/
+.data thead tr{
+	background: #fbedce;
+	line-height: 40px;
+	font-weight: bold;
+}
+.data tbody tr{
+	background: #fff;
+	line-height: 32px;
+}
+.data tbody tr:hover{
+	background-color: #f7f9fd;
+}
+/*设置按钮的样式*/
+.nodify{
+	margin: 10px;
+	padding-left: 15px;
+	background: url(../img/s1.png) no-repeat left;
+}
+.delete{
+	padding-left: 15px;
+	margin: 10px;
+	background: url(../img/s2.png) no-repeat left;
+	border: 0;
+}
+.data input:hover{
+	/*将鼠标形状设置为手型*/
+	cursor: pointer;
+}
+/*logo图片和消息框的定位问题*/
+.logo img{
+	float: left;
+}
+.content{
+	/*将其作为子元素的绝对定位目标*/
+	position: relative;
+
+}
+.content .alert{
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	width: 500px;
+	height: 80px;
+	background: #fdecec url(../img/s2.png) no-repeat 10px 35px;
+	border: 1px solid #ccc ;
+}
+.content .alert_exit{
+	float: right;
+	margin: 5px
+}
+.content .alert_exit,.content .alert_ok:hover{
+	cursor: pointer;
+}
+.alert p{
+	margin-left: 38px;
+	line-height: 80px
+}
+/*设置菜单栏样式*/
+.menu ol{
+	border: 1px solid #00ff00;
+	width: 960px;
+	height: 91px;
+	margin: 0px auto;
+	list-style-type: none;
+}
+.menu li{
+	border: 1px solid #0000ff;
+	width: 68px;
+	height: 77px;
+	margin: 7px 14px;
+	float: left;
+	
+}
+.index{
+	background: url(../img/1.png) no-repeat center;
+}
+.index:hover{
+	background: url(../img/3.png) no-repeat center;
+	cursor: pointer;
+}
+.role{
+	background: url(../img/2.png) no-repeat center;
+}
+/*去掉调试过程中的边框*/
+.menu ol,.menu li,div{
+	border: 0;
+}

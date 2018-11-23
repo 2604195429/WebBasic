@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ee</title>
+	<script type="text/javascript">
+		function pf(){
+			//获取文本框
+			var input = document.getElementById("num");
+			//获取框内的值
+			var text = input.value;
+			console.log(text);
+			//获取span
+			var spana = document.getElementById("result");
+			//判断是否是数字
+			if (isNaN(text)) {
+				spana.innerHTML = "请输入数字";
+			}else{
+				spana.innerHTML = text*text;
+			}
+		};	
+	</script>
+</head>
+<body>
+	<input id="num" type="text" />
+	<input onclick="pf();" type="button" value="button" />
+	= <span id="result"></span>
+</body>
+</html>

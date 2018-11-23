@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // alert(1);
+        //onload是界面加载事件，在界面加载完成后自动触发。触发时调用此匿名函数
+        window.onload = function () {
+            // alert(2);
+            //1.读写节点
+            //1.1读取节点的名称/类型
+            var p1 = document.getElementById("p1");
+            console.log(p1.nodeName);
+            console.log(p1.nodeType);
+            //1.2如何读取节点的内容：双标签中间文本叫内容，任何双标签都有内容，如<a>达内</a>
+            //1)innerHIML(含有子标签)
+            console.log(p1.innerHTML);
+            p1.innerHTML = "1.<u>读写</u>节点";
+            //2)innerText(忽略子标签)
+            var p2 = document.getElementById("p2");
+            console.log(p2.innerText);
+            p2.innerText = "1.<u>读写</u>节点";
+            //1.34如何读取节点的值：表单控件中的数据叫值
+            var b1 = document.getElementById("b1");
+            console.log(b1.value);
+            b1.value = "f2f2f2f";
+
+            //1.4读取节点属性
+            //1)通过方法读写属性
+            var img = document.getElementById("i1");
+            console.log(img.getAttribute("src"));
+            // img.setAttribute("src","fff");
+            img.removeAttribute("src");
+            //2）通过标准属性名读写属性
+         var p6 =    document.getElementById("p6");
+            console.log(p6.style);
+            p6.style = "color:yellow;";
+            //3)通过不标准属性名读写属性（低版本浏览器不支持）
+            //a.href,img.src
+        }
+    </script>
+</head>
+<body>
+<p id="p1">1.<b>读写</b>节点</p>
+<p id="p2">2.<b>查询</b>节点</p>
+<p id="p3">3.<b>增删</b>节点</p>
+<p>
+    <input type="button" value="abc" id="b1">
+</p>
+<p>
+    <img src="kk.jpg" id="i1"/>
+</p>
+<p style="color:red;" id="p6">
+    标准的属性
+</p>
+</body>
+</html>

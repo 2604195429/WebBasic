@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>f</title>
+	<script type="text/javascript">
+		var str = "you can you up,no can no bb.";
+		var reg=/no/;
+		console.log(reg.exec(str));
+
+		reg = /no/g;
+		console.log(reg.exec(str));
+		console.log(reg.exec(str));
+		console.log(reg.exec(str));
+		console.log(reg.exec(str));
+
+		console.log(reg.test(str));
+
+		// console.log(str = str.replace(reg,"bu"));
+		// console.log(str);
+		console.log(str.match(reg));
+		console.log(str.search(reg));
+		//Function
+		function sum() {
+		    var s = 0 ;
+			if(arguments.length>0){
+                for (var i = 0; i < arguments.length; i++) {
+                    s+=arguments[i];
+                }
+			}
+            return s;
+        }
+        console.log(sum(2,3,4,5));
+	</script>
+</head>
+<body>
+
+</body>
+</html>

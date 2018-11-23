@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //网页加载时直接生产随机数,该数在body加载前就有了,所有用户点击猜时在对应函数内可用.
+        //0<=x<1 ->1,2...99
+        var ran = parseInt(Math.random() * 100);
+        console.log(ran);
+        //无论此函数写在前面还是这里,他都是在用户点击按钮时调用的,他都比生成随机数晚
+        function guess() {
+            //获取文本框里的值
+            var num = document.getElementById("num").value;
+            var result= document.getElementById("result");
+            if (isNaN(num)) {
+                result.innerHTML = "请输入数字";
+            }else{
+                if(num==ran){
+                    result.innerHTML = "猜对了";
+                }else {
+                    result.innerText = "猜错了";
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+<input type="text" id="num">
+<input type="button" value="猜" onclick="guess();">
+<span id="result"></span>
+</body>
+</html>

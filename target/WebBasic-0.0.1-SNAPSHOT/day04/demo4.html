@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		div{
+			background: #066;
+			width: 900px;
+			height: 900px;
+			margin:20px auto;
+			position: relative;
+		}
+		#i1{
+			position: absolute;
+			top: 100px;
+			left: 20px;
+		}
+		#i2{
+			position: absolute;
+			top: 450px;
+			left: 30px;
+		}
+		#i3{
+			position: absolute;
+			top: 50px;
+			left: 200px;
+		}
+		/*堆叠顺序：元素显示的层次，数越靠上，反之越靠下*/
+		img:hover{
+			z-index: 999;
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<img style="width: 400px" src="../img/bg.png" id="i2">
+		<img src="../img/cat.jpg" id="i3">
+		<img src="../img/bg1.png" id="i1">
+	</div>
+</body>
+</html>

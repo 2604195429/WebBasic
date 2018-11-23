@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+	<style>
+		.ok{
+			color: #15B82C;
+		}
+		.error{
+			color: #ff0000;
+		}
+	</style>
+	<script type="text/javascript">
+		//验证账号的格式
+		function checkUser(){
+			var user=document.getElementById("user").value;
+			//获取span
+			var span = document.getElementById("span1");
+			//判断账号格式
+			var  reguser = /^\w{5,11}$/;
+			if (reguser.test(user)){
+				span.className = "ok";
+				return true;
+			}else{
+			    span.className = "error";
+			    return false;
+			}
+		}
+        function checkPassword(){
+            var user=document.getElementById("user").value;
+            var password = document.getElementById("password").value;
+            //获取span
+            var span = document.getElementById("span2");
+            //判断账号格式
+            var  reguser = /^\w{10,20}$/;
+            if (reguser.test(password)){
+                span.className = "ok";
+                return true;
+            }else{
+                span.className = "error";
+                return false;
+            }
+
+        }
+
+	</script>·
+</head>
+<body>
+	<form action="http://www.baidu.com" onsubmit="return checkPassword()+checkUser()==2;">
+		<p>
+			账号：
+			<input type="text" onblur="checkUser();" id="user">
+			<span id="span1">5-10位、字母、数字、下划线</span>
+		</p>
+		<p>
+			密码：
+			<input type="password" onblur="checkPassword();" id="password">
+			<span id="span2">10-20位、字母、数字、下划线</span>
+		</p>
+		<p>
+			<input type="submit" id="btn_login" value="登录">
+		</p>
+	</form>
+</body>
+</html>

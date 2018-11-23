@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            border: 1px solid red;
+            width: 101px;
+            height: 101px;
+            margin: 0 auto;
+        }
+
+        .show {
+            display: inline-block;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        var number = 0;
+        var id ;
+        window.onload = function () {
+           id = lunbo();
+
+        }
+        function stop() {
+            clearInterval(id);
+        }
+        function start() {
+            id=lunbo();
+        }
+        function lunbo() {
+            var id = setInterval(function () {
+                var imgs = document.getElementsByTagName("img");
+                for (var i = 0; i < imgs.length; i++) {
+                    var img = imgs[i];
+                    img.className = "hidden"
+                }
+                var img = imgs[number % imgs.length];
+                img.className = "show";
+                number++
+            }, 2000);
+            return id;
+        }
+    </script>
+</head>
+<body>
+<!--hover不是事件，是伪类选择器！
+    onmouseover是鼠标悬停事件
+    onmouseout是鼠标离开事件-->
+<div onmousemove="stop();" onmouseout="start();">
+    <img src="../img/1.png"/>
+    <img src="../img/2.png" class="hidden"/>
+    <img src="../img/3.png" class="hidden"/>
+    <img src="../img/4.png" class="hidden"/>
+    <img src="../img/5.png" class="hidden"/>
+</div>
+</body>
+</html>

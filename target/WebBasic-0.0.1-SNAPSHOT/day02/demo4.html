@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style type="text/css">
+	/*类选择器：选择class等于某值的所有元素.class是程序员根据逻辑自己给元素增加的分类*/
+	.girl{
+		color: pink;
+	}
+	/*id选择器：选择id等于某值的唯一的元素。*/
+	#p4{
+		color: yellow;
+	}
+	/*选择器组：写出一组选择器，选中每个选择器所对应的目标的并集*/
+	.girl,#p4{
+		font-weight: bold;
+	}
+	/*派生选择器*/
+	/*选择某元素的所有层级的元素*/
+	#p5 b{
+		color: red;
+	}
+	/*选择某元素的下个层级的元素*/
+	#p5>b{
+		color: green;
+	}
+	/*伪类选择器：根据元素的状态选择元素*/
+	/*选择未访问过的超链接*/
+	a:link{
+		color: green;
+	}
+	/* 选择已访问过的超链接 */
+	a:visited{
+		color: red;
+	}
+	/* 选择激活状态的按钮 */
+	#b1:active{
+		background-color:#2D89E3; 
+	}
+	/* 选择有焦点的文本框/密码框/文本域 */
+	#i2:focus{
+		background-color: #15B82C;
+
+	}
+	/* 选择鼠标悬停态的图片 */
+	img:hover{
+		width:250px;
+		height: 250px;
+	}
+</style>
+</head>
+<body>
+	<p class="girl">查琳</p>
+	<p>张新华</p>
+	<p class="girl">张嘉文</p>
+	<p id="p4">继承</p>
+	<p id="p5">
+		北京市<b>海淀区</b><u>出版物<b>经营许可证</b></u> 新出发京零字第海130003号
+	</p>
+	<p>
+		<a href="http://www.baidu.com">百度</a>
+		<a href="demo1.html">搜狗</a>
+	</p>
+	<p>
+		<input id="b1" type="button" value="按钮" />
+	</p>
+	<p>
+		<input type="text" id="i2"/>
+	</p>
+	<p>
+		<img src="../img/4.jpg" width="20" height="20" />
+	</p>
+</body>
+</html>

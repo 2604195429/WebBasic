@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var cities;
+        window.onload = function () {
+            cities = [["石家庄", "保定", "廊坊"], ["广州", "东莞", "佛山"], ["南宁", "桂林", "玉林"]];
+        }
+
+        function chan() {
+            var sel1 = document.getElementById("province");
+            var n = sel1.value;
+            var pcities = cities[n];
+            var sel2 = document.getElementById("city");
+            sel2.innerHTML = "<option>请选择</option>";
+            // var options = sel2.getElementsByTagName("option");
+            // for (var i = options.length - 1; i > 0; i--) {
+            //     sel2.removeChild(options[i]);
+            // }
+            if (pcities) {
+                for (var i = 0; i < pcities.length; i++) {
+                    var myoption = document.createElement("option");
+                    myoption.innerHTML=pcities[i];
+                    sel2.appendChild(myoption);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+省：
+<select onchange="chan();" id="province">
+    <option value="-1">请选择</option>
+    <option value="0">河北省</option>
+    <option value="1">广东省</option>
+    <option value="2">广西省</option>
+</select>
+市：
+<select id="city">
+    <option>请选择</option>
+</select>
+
+</body>
+</html>

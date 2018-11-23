@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    window.onload = function () {
+        //1.根据id查询节点
+        //2.根据标签名查询节点
+        //3.根据层次查询节点
+        //1）查询父亲
+        var sh = document.getElementById("sh");
+        var ul = sh.parentNode;
+        console.log(ul);
+        //2）查询孩子
+        //包括空格（了解）
+        // console.log(ul.childNodes);
+        //只包含元素（重点）
+        console.log(ul.getElementsByTagName("li"));
+        //3）查询兄弟
+        var gz = sh.parentNode.getElementsByTagName("li")[2];
+        console.log(gz);
+        //4.根据name查询节点
+        //一般用于查询一组单选/多选
+        var sex = document.getElementsByName("sex");
+        console.log(sex);
+    }
+</script>
+<body>
+<ul>
+    <li>北京</li>
+    <li id="sh">上海</li>
+    <li>广州</li>
+    <li>深圳</li>
+    <li>无锡</li>
+    <li>无锡</li>
+</ul>
+<p>
+    <input type="radio" name="sex"/>男
+    <input type="radio" name="sex"/>女
+</p>
+</body>
+</html>

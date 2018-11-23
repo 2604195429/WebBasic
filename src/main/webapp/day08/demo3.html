@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function append() {
+          var li=  document.createElement("li");
+          li.innerHTML = "南通";
+          document.getElementById("city").appendChild(li);
+        }
+        function insert() {
+            var li=  document.createElement("li");
+            li.innerHTML = "张";
+            document.getElementById("city").insertBefore(li,document.getElementById("sh"))
+        }
+        function f3() {
+            var li = document.getElementById("sh");
+            var ul = document.getElementById("city");
+            ul.removeChild(li);
+        }
+    </script>
+</head>
+<body>
+<p>
+    <input type="button" value="追加" onclick="append();">
+    <input type="button" value="插入" onclick="insert();">
+    <input type="button" value="删除" onclick="f3();">
+</p>
+<ul id="city">
+    <li>北京</li>
+    <li id="sh">上海</li>
+    <li>广州</li>
+    <li>深圳</li>
+    <li>无锡</li>
+    <li>无锡</li>
+</ul>
+</body>
+</html>
