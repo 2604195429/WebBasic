@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edd75236-4c50-450d-ae38-05d37ce2cc1e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day07/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day07/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day07/demo3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day07/demo4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day07/demo5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day07/kk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day08/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day08/demo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day08/demo3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day08/demo4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day09/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/day09/demo2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/day09/demo3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/day09/jsq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebBasic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WebBasic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cn.tedu/WebBasic/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/m2e-wtp/web-resources/META-INF/maven/cn.tedu/WebBasic/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,24 +36,29 @@
     <session id="-860750797">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.29" value="2" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.69" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="13" />
+          <entry key="html" value="17" />
           <entry key="jpg" value="3" />
+          <entry key="js" value="2" />
           <entry key="png" value="5" />
           <entry key="sql" value="1" />
           <entry key="ts" value="1" />
@@ -74,8 +67,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="13" />
+          <entry key="HTML" value="17" />
           <entry key="Image" value="8" />
+          <entry key="JavaScript" value="2" />
           <entry key="Scratch" value="1" />
           <entry key="TypeScript" value="1" />
           <entry key="XML" value="1" />
@@ -83,13 +77,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="7381" />
+          <entry key="html" value="8301" />
           <entry key="sql" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="7381" />
+          <entry key="HTML" value="8301" />
           <entry key="Scratch" value="19" />
         </counts>
       </usages-collector>
@@ -97,56 +91,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/day08/demo1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/day08/demo2.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/day08/demo3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="27" column="52" selection-start-line="27" selection-start-column="52" selection-end-line="27" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/day08/demo4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/day09/demo1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/day09/demo2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <caret line="2588" column="50" lean-forward="true" selection-start-line="2588" selection-start-column="50" selection-end-line="2588" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -165,6 +114,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/webapp/day07/demo4.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/day09/demo3.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -185,6 +135,11 @@
         <option value="$PROJECT_DIR$/src/main/webapp/day08/demo4.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/day09/demo1.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/day09/demo2.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/day09/demo3.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/day09/jdq.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/day09/jsq.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/day09/jquery-3.3.1.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.min.js" />
       </list>
     </option>
   </component>
@@ -205,9 +160,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="330" />
-    <option name="y" value="-19" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1400" />
     <option name="height" value="976" />
   </component>
@@ -216,7 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,12 +202,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="day09" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -262,7 +217,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542945389008" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543287717480" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="js.last.introduce.type" value="VAR" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -273,7 +228,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\eclipse\code\WebBasic\src\main\webapp\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\eclipse\code\WebBasic\src\main\webapp\day09" />
       <recent name="D:\eclipse\code\WebBasic\src\main\webapp\day07" />
     </key>
   </component>
@@ -325,18 +284,24 @@
       <workItem from="1542785927563" duration="2876000" />
       <workItem from="1542844090764" duration="15117000" />
       <workItem from="1542872476439" duration="1324000" />
-      <workItem from="1542929977714" duration="7043000" />
+      <workItem from="1542929977714" duration="7415000" />
+      <workItem from="1542954475162" duration="602000" />
+      <workItem from="1543189177200" duration="51000" />
+      <workItem from="1543189292607" duration="975000" />
+      <workItem from="1543212819313" duration="6275000" />
+      <workItem from="1543284234624" duration="168000" />
+      <workItem from="1543284499234" duration="2162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63214000" />
+    <option name="totallyTimeSpent" value="73819000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -498,21 +463,43 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/day08/demo4.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="58" lean-forward="true" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/day09/demo1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/day09/jdq.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/day09/demo2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="266">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/day09/jsq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/day09/demo3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery-3.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="2588" column="50" lean-forward="true" selection-start-line="2588" selection-start-column="50" selection-end-line="2588" selection-end-column="50" />
         </state>
       </provider>
     </entry>

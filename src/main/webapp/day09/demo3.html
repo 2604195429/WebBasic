@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 500px;
+            border: 1px solid red;
+            padding: 30px;
+        }
+        p{
+            border: 1px solid red;
+            padding: 30px;
+        }
+    </style>
+    <script>
+        function f1(e) {
+            alert('按钮');
+            //停止冒泡
+            if (e.stopPropagation){
+                e.stopPropagation();
+            } else {
+                e.cancelBubble = true;
+            }
+        }
+        function f2(e) {
+            //获取事件源
+           var obj =  e.srcElement||e.target;
+           console.log(obj);
+        }
+    </script>
+</head>
+<body>
+<div onclick="alert('div');">
+    <p onclick="alert('p');">
+        <input type="button" value="按钮" onclick="f1(event);">
+    </p>
+</div>
+<div onclick="f2(event);">
+    <a href="#">顶部</a>
+    <img src="../img/1.png"/>
+    <span>abc</span>
+</div>
+</body>
+</html>

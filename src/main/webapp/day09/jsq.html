@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+            var div = document.getElementById("jsq");
+            div.onclick = function (e) {
+               var ojb =  e.srcElement||e.target;
+               //只处理input
+                var p = document.getElementById("screen")
+                if (ojb.nodeName =='INPUT'){
+                    if (obj.value == 'C'){
+                        //清空p
+                        p.innerHTML = '';
+                    } else if (obj.value =="="){
+                        //计算
+                        try{
+                            var result = eval("("+p.innerHTML+")");
+                            p.innerHTML = result;
+                        }catch (e) {
+                            p.innerHTML = "error";
+                        }
+                    } else{
+                        //累加
+
+                        p.innerHTML+=obj.value;
+                    }
+                }
+            };
+        }
+    </script>
+</head>
+<body>
+<div id="jsq">
+    <p id="screen"></p>
+</div>
+</body>
+</html>
