@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        //界面加载后调用这个函数
+        //其作用等价于window.onload = function(){}
+        $(function () {
+            //1.读写节点的操作
+            //1.1读写内容（双标签有内容）
+            //1)html()==innerTHML
+            console.log($("p:eq(0)").html("jquery对<u>dom操作</u>提供了支持"));
+            //2)text()==innerText
+            console.log($("p:eq(0)").text());
+            //1.2读写值（表单控件）
+            //val()==value
+            console.log($(":button:first").val("aaf"));
+            //1.3读写属性（所有）
+            //attr() = get/setAttribute()
+            console.log($("img:first").attr("src", "../img/2.png"));
+            //2.增删节点
+            //2.1创建节点
+            var $li1 = $("<li>南通</li>");
+            var $li2 = $("<li>苏州</li>");
+            //2.2增加节点
+            $("ul").prepend($li1);
+            $("#tz").after($li2);
+            //2.3删除节点
+            $("li:last").remove();
+            //3.遍历节点：查找某节点的亲戚。
+            //有些时候我调用别人的方法得到一个节点，对其进行一些操作，然后又要对此节点的亲戚进行操作。此时无法写选择器，只能调用这样的方法
+            //假设我调用了别人的方法得到天津
+            var $tj = $("#tz");
+            //要获取天津的亲戚做进一步处理
+            console.log($tj.parent());
+            console.log($tj.prev());
+            console.log($tj.siblings());
+            //假设我调用了别人的方法得到ul
+            var $ul = $("ul");
+            //要获取列表的孩子做进一步的处理
+            console.log($ul.find("li:gt(2)"));
+        })
+    </script>
+</head>
+<body>
+<p>jquery对<b>dom操作</b>提供了支持</p>
+<p>
+    <input type="button" value="AAF">
+</p>
+<p>
+    <img src="../img/1.png">
+</p>
+<ul>
+    <li>北京</li>
+    <li>上海</li>
+    <li id="tz">天津</li>
+    <li>深圳</li>
+    <li>广州</li>
+</ul>
+</body>
+</html>

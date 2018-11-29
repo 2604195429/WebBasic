@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        function bigger() {
+            //获取段落的原始字号（16px）
+            var size = $("p").css("font-size");
+            //去掉单位，便于增加字号
+            size = size.replace("px","");
+            //将字号+1在设置给段落
+            $("p").css("font-size",++size+"px");
+        }
+    </script>
 </head>
 <body>
-
+<input type="button" value="+" onclick="bigger();"/>
+<p>1.引入jquery.js</p>
+<p>2.使用选择器选中节点</p>
+<p>3.调用它的api操作节点</p>
 </body>
 </html>
