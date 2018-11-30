@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        //加入购物车
+        //$obj.eq(i)==$($obj[i])
+        function add_shoppingcart(btn) {
+            //获取按钮的父亲的兄弟们
+            var $tds = $(btn).parent().siblings();
+            //获取td0的内容（商品名）
+            var name = $tds.eq(0).html();
+            //获取td1的内容（单价）
+            var price = $tds.eq(1).html();
+
+        }
+
+        //加法
+        function increase(btn) {
+            var amount = $(btn).prev().val();
+            $(btn).prev().val(++amount);
+            //获取单价
+            var price = $(btn).parent().prev().html();
+            $(btn).parent().next().html(amount*price);
+        }
+    </script>
+</head>
+<body>
+<!--假设已有、、、、、、、、、、、、、、、、、、、、-->
+</body>
+</html>

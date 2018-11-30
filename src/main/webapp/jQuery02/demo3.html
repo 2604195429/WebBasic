@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            //给按钮绑定单击事件
+            $(":button").click(function () {
+                var n = $(":text").length;
+                var id = setInterval(function () {
+                    //获取下一个要处理的框
+                    var $text = $(":text").eq(--n);
+                    //模拟光标切入事件
+                    $text.trigger("focus");
+                    //生成随机的分数，写入框内
+                    var s = parseInt(Math.random()*100);
+                    $text.val(s);
+                    if (n<=0){
+                        clearInterval(id);
+                    }
+                }, 2000);
+            });
+        });
+    </script>
+</head>
+<body>
+<p>
+    <input type="button" value="打分">
+</p>
+<p>
+    xxx:<input type="text">
+</p>
+<p>
+    xxx:<input type="text">
+</p>
+<p>
+    xxx:<input type="text">
+</p>
+<p>
+    xxx:<input type="text">
+</p>
+<p>
+    xxx:<input type="text">
+</p>
+</body>
+</html>

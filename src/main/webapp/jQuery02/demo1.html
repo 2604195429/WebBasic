@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .big{font-size: 30px;}
+        .important{color:red}
+    </style>
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script>
         //界面加载后调用这个函数
@@ -41,10 +45,24 @@
             var $ul = $("ul");
             //要获取列表的孩子做进一步的处理
             console.log($ul.find("li:gt(2)"));
-        })
+            //4.样式操作
+            //增加一个样式
+            $("p:first").addClass("big").addClass("important");
+            //删除一个样式
+            $("p:first").removeClass("big").removeClass("important");
+            //删除所有样式removeClass();
+            //判断元素是否包含某样式
+            console.log($("p:first").hasClass("big"));
+        });
+        //切换样式
+        function bb() {
+            $("p:first").toggleClass("big");
+        }
+
     </script>
 </head>
 <body>
+
 <p>jquery对<b>dom操作</b>提供了支持</p>
 <p>
     <input type="button" value="AAF">
@@ -59,5 +77,8 @@
     <li>深圳</li>
     <li>广州</li>
 </ul>
+<p>
+    <input type="button" value="大" onclick="bb();"/>
+</p>
 </body>
 </html>
